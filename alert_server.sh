@@ -3,7 +3,7 @@
 #Si aparece un msg con este criterio de busqueda se enviará por telegram
 CRITERIO="CRITICAL"
 BITACORA_FILE="$(cat /usr/local/nagios/var/nagios.log)"
-BITACORA_FILE_CRI="$($BITACORA_FILE | grep $CRITERIO_ERROR)"
+BITACORA_FILE_CRI="$($BITACORA_FILE | grep $CRITERIO)"
 DIRECTORIO_ULT_ID="/home/jbarradas/SRC/ultimo_id.txt"
 #Es el último ID registrado desde que se envio el último mensaje por telegram.
 ID_MAYOR="$1"
